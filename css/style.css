@@ -22,19 +22,19 @@ body {
 /*-------- HEADER --------*/
 
 nav{
-  background: #0c7bd6;
+  background: #0c85d65d;
   height: 80px;
   width: 100%;
 }
 .enlace{
   position: absolute;
-  padding: 20px 50px;
+  padding: 10px 15px;
 }
-.zoko{
-  height: 50px;
-  width: 250px;
-  padding-left: 20px;
-  padding-bottom: 5px;
+.losted{
+  height: 90px;
+  width: 350px;
+  padding-bottom: 25px;
+  color: black;
 }
 nav ul{
   float: right;
@@ -258,11 +258,11 @@ li a:hover{
 /*-------- SECTION INICIO --------*/
 
 .section1{
-  background: url("../img/wallpaper2.png");
+  background: url("../img/wallpaper.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1440px;
-  height: 590px;
+  height: 790px;
 }
 
 .bienvenida {
@@ -435,6 +435,27 @@ button:hover{
 
 /*-------- SECTION REDES --------*/
 
+/*-------- SECTION PRODUCTOS BOOSTRAP --------*/
+
+#galeria img {
+  width: 100%;
+  height: 350px;
+}
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+#galeria {
+  background: url("../img/wallpapertest.jpg");
+  color: white;
+}
+/*-------- SECTION PRODUCTOS BOOSTRAP --------*/
 
 
 /*-------- FOOTER --------*/

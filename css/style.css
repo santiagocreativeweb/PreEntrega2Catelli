@@ -55,7 +55,8 @@ nav ul li a{
 }
 
 li a:hover{
-  background: #0c96d68e;
+  background: #0c85d641;
+  color: white;
   transition: .5s;
 }
 .checkbtn{
@@ -71,7 +72,9 @@ li a:hover{
   display: none;
 }
 
-@media (max-width: 952px){
+/*-------- RESPONSIVE --------*/
+
+@media (max-width: 991px){
   .enlace{
       padding-left: 20px;
   }
@@ -81,7 +84,7 @@ li a:hover{
 
 }
 
-@media (max-width: 858px){
+@media (max-width: 991px){
   .checkbtn{
       display: block;
   }
@@ -105,7 +108,7 @@ li a:hover{
   }
   li a:hover, li a.active{
       background: none;
-      color: #0c96d68e;
+      color: #2c3e50;
   }
   #check:checked ~ ul{
       left:0;
@@ -117,18 +120,8 @@ li a:hover{
 /*-------- SECTION CONTACTO --------*/
 
 .contacto {
-  text-align: center;
   text-decoration: none;
   padding: 100px;
-}
-
-
-.red {
-  color: red;
-}
-
-.white {
-  color: rgb(0, 174, 255);
 }
 
 .whatsapp {
@@ -141,119 +134,72 @@ li a:hover{
   width: 100px;
 }
 
-.contenedor .form .form-header .form-title {
-  font-weight: normal;
-  font-family: 'Roboto', sans-serif;
-  color: #ff851b;
+.form-area {
+	padding-top: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.izquierda {
+	background: blueviolet;
+	padding: 200px 98px;
+}
+.izquierda h2 {
+  font-family: poppins;
+	color: #fff;
+	font-weight: 100;
+	font-size: 48px;
+}
+.izquierda h2 span {
+	font-weight: 0;
+}
+.single-form{
+    background: #fff;
+}
+.derecha {
+	padding: 70px 100px;
+	position: relative;
 }
 
-.contenedor .form .form-header .form-title span {
-  color: #fff;
+.derecha button {
+	border: none;
+	border-radius: 2px;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
 }
 
-.contenedor .form {
-  background-color: rgba(0,0,0,.6);
-  width: 90%;
-  max-width: 650px;
-  margin: auto;
-  padding: 5px 35px;
-  margin-top: 30px;
-  padding-bottom: 30px; 
-  border-radius: 3px;
-}
+/*-------- RESPONSIVE --------*/
 
-.contenedor .form .form-label {
-  display: block;
-  color: #ff851b;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
+@media (max-width: 991px){
+.left {
+  padding: 90px 15px;
+  text-align: center;
 }
-
-.contenedor .form .form-input, .form-textarea {
-  background-color: rgba(0,0,0,.7);
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #ff851b;
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 2px;
-  font-size: 14px;
-  color: #ff851b;
-  font-family: 'Roboto', sans-serif;
+.left h2 {
+  font-size: 25px;
 }
-
-.contenedor .form .form-textarea {
-  resize: vertical;
-  max-height: 150px;
-  min-height: 50px;
+.right {
+  padding: 25px;
 }
-
-.contenedor .form .btn-submit {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  outline: none;
-  background-color: #ff851b;
-  font-size: 16px;
-  border: none;
-  color: #fff;
-  padding: 15px 0;
-  cursor: pointer;
+.right i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
 }
-
-.contenedor .form .btn-submit:hover {
-  background-color: #f29718;
+.right button {
+	width: 150px;
+	padding: 12px 0;
 }
-
-.iframe2{ 
-  padding: 15px ;
+    
 }
 
 /*-------- SECTION CONTACTO --------*/
-
-/*-------- SECTION PRODUCTOS --------*/
-
-.productos {
-  text-align: center;
-  text-decoration: none;
-  padding: 100px;
-}
-
-.boton {
-  color: white;
-}
-
-.boton:hover {
-  color: rgb(110, 6, 230);
-  text-decoration: underline;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.trainingtext {
-  color: #0681e6;
-  text-decoration: underline;
-  font-size: 40px;
-}
-
-.training {
-  padding: 45px;
-  width: 500px;
-  height: 350px;
-  display: block;
-
-}
-
-.training2 {
-  padding: 50px;
-  width: 500px;
-  height: 350px;
-  margin-left: 560px;
-}
-
-
-/*-------- SECTION PRODUCTOS --------*/
 
 /*-------- SECTION INICIO --------*/
 
@@ -284,18 +230,18 @@ li a:hover{
 }
 
 .azultext3 {
-display: inline-block;
-color: #0084ff;
-padding: 10px 0.9em;
-font-size: 75%;
-font-weight: 700;
-line-height: 1;
-text-align: center;
-white-space: nowrap;
-vertical-align: baseline;
-background-color: #0074e060;
-border-radius: 50px;
-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  display: inline-block;
+  color: #0084ff;
+  padding: 10px 0.9em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #0074e060;
+  border-radius: 50px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .azultext2 {
@@ -310,7 +256,7 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 
 /*-------- SECTION INICIO --------*/
 
-/* <-- SECTION 2 --> */
+/*-------- SECTION NOSOTROS --------*/
 
 .sobremi{
 	width: 100%;
@@ -331,7 +277,6 @@ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-
 .sobremi-text{
 	width: 550px;
 }
-
 
 .main{
 	width: 1130px;
@@ -375,7 +320,7 @@ button:hover{
   color: white;
 	cursor: pointer;
 }
-/* <-- SECTION 2 --> */
+/*-------- SECTION NOSOTROS --------*/
 
 /*-------- SECTION PRECIOS --------*/
 
@@ -399,42 +344,6 @@ button:hover{
 
 /*-------- SECTION PRECIOS --------*/
 
-/*-------- SECTION REDES --------*/
-
-
-.redestext {
-  color: #0681e6;
-  text-align: center;
-  padding: 30px;
-}
-
-.redestitulos { 
-  text-align: center;
-  color: white;
-}
-
-.redesredes {
-  color: white;
-  text-align: center;
-}
-
-.facebook {
-  width: 50px;
-  height: 50px;
-}
-
-.instagram {
-  width: 50px;
-  height: 50px;
-}
-
-.whatsappcom {
-  width: 50px;
-  height: 50px;
-}
-
-/*-------- SECTION REDES --------*/
-
 /*-------- SECTION PRODUCTOS BOOSTRAP --------*/
 
 #galeria img {
@@ -454,7 +363,14 @@ button:hover{
 #galeria {
   background: url("../img/wallpapertest.jpg");
   color: white;
+  padding-bottom: 7%;
 }
+
+.productosh1 {
+  color: #0084ff;
+  text-decoration: underline;
+}
+
 /*-------- SECTION PRODUCTOS BOOSTRAP --------*/
 
 
@@ -516,7 +432,6 @@ button:hover{
   color: red;
 }
 
-/* <-- FOOTER --> */
 
 /*-------- FOOTER --------*/
 

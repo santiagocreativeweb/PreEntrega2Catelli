@@ -34,7 +34,6 @@ nav{
   height: 90px;
   width: 350px;
   padding-bottom: 25px;
-  color: black;
 }
 nav ul{
   float: right;
@@ -382,102 +381,64 @@ li a:hover{
 
 /*-------- SECTION SERVICIOS --------*/
 
-.body15 {
-  background-color: #19191933;
-}
-.contenedor{
-  width: 90%;
-  max-width:900px;
-  margin: auto;
-  height:100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.tabla{
-  width: 33%;
-  height: 550px;
-  margin: auto;
-  padding-bottom: 150px;
-  border: 1px solid #343759;
-  border-radius: 4px;
-  box-shadow: 0px 0px 4px 0px  #343759;
-  padding: 60px;
+.servicios{
   text-align: center;
-  flex-grow: 1;
-  color: #343759;
 }
-
-.tabla h2{
-  font-size:30px;
-  margin-bottom:35px;
-}
-
-.tabla img{
-  width: 64px;
-  margin-bottom:35px;
-}
-
-.tabla h3{
-  font-size:30px;
-  margin-bottom: 20px;
-}
-
-.tabla p{
-  display: block;
-  margin-bottom:20px;
-}
-
-.boton {
-  display:inline-block;
-  width: 150px;
-  padding:12px;
-  background: #0a141d;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 100px;
+.servicios h1{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #3498db;
+  margin-top: 40px; 
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  margin: auto;
+  color: rgb(0, 0, 0);
 }
-
-.tabla:hover, .hover{
-  background: #343759;
-  color: #f1f1f2;
-  padding-bottom: 150px;
-  transition: .5s all;
-  transform: scale(1.1);
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.servicio{
+  display: inline-block;
+  width: 50%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
   cursor: pointer;
+  transition: 0.4s;
 }
-
-@media screen and (max-width: 1000px){
-  .tabla{
-      width: 45%;
-      max-width:none;
-      margin-bottom: 40px;
-      flex-grow: initial;
+.servicio:hover{
+  background: rgba(221, 221, 221, 0.514);
+}
+.servicio i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px
+}
+.servicio h2{
+  color: #3498db;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.servicio p{
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .servicio{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicio{
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 700px){
-  .tabla{
-      width: 45%;
-      padding:40px;
-  }
-  .tabla h2{
-      margin-top: 50px;
-  }
-}
-
-@media screen and (max-width: 550px){
-  .tabla{
-      width: 85%;
-      padding: 30px;
-  }
-}
 
 /*-------- SECTION SERVICIOS --------*/
 
